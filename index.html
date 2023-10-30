@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&family=Ubuntu:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Гостиница</title>
+</head>
+
+<body>
+  <section class="menu">
+    <div class="menu-rotate">
+      <img src="./image/burger.svg" alt="" class="menu__image-size">
+      <p>Меню</p>
+    </div>
+  </section>
+
+  <section class="menu-open">
+    <img src="./image/logo64.svg" alt="" class="logo">
+    <div class="menu-open__links">
+      <ul>
+        <li class="mark">
+          <img src="./image/marker.svg" alt="" class="map-icon">
+          <a href="map.html">Где искать</a>
+        </li>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#1">Аппартаменты</a></li>
+        <li><a href="#2">Оплата</a></li>
+        <li><a href="#3">О нас</a></li>
+        <li><a href="#4">Контакты</a></li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section class="wrapper-for-carousel">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./image/background.jpg" class="d-block w-100 carousel__image" alt="">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Метка первого слайда</h5>
+            <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./image/background.jpg" class="d-block w-100 carousel__image" alt="">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Метка второго слайда</h5>
+            <p>Некоторый репрезентативный заполнитель для второго слайда.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./image/background.jpg" class="d-block w-100 carousel__image" alt="">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Метка третьего слайда</h5>
+            <p>Некоторый репрезентативный заполнитель для третьего слайда.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Предыдущий</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Следующий</span>
+      </button>
+    </div>
+  </section>
+
+  <div class="Delimiter">
+    <h2>Аппартаменты</h2>
+  </div>
+  <section class="appartaments">
+    <a id="1"></a>
+    <div class="appartaments__card">
+      <img src="./image/background.jpg" alt="" class="card__image">
+
+      <div class="card__description">
+        <h3>Класс</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt arcu massa, dapibus rhoncus odio
+          lobortis vel. Nullam dictum eget diam ut iaculis. Fusce a dui velit. Class aptent taciti sociosqu ad litora
+          torquent per conubia nostra, per inceptos himenaeos. Nullam congue elit elit, a sodales nisi suscipit in.Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt arcu massa, dapibus rhoncus odio
+          lobortis vel.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt arcu massa, dapibus
+          rhoncus odio
+          lobortis vel. </p>
+
+      </div>
+      <div class="card__description-price">
+        <h5>Стоимость</h5>
+        <h4 class="price">5.699р</h4>
+        <button class="card__description-button">Забронировать</button>
+      </div>
+    </div>
+
+    <div class="appartaments__card">
+      <img src="./image/background.jpg" alt="" class="card__image">
+
+      <div class="card__description">
+        <h3>Класс</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt arcu massa, dapibus rhoncus odio
+          lobortis vel. Nullam dictum eget diam ut iaculis. Fusce a dui velit. Class aptent taciti sociosqu ad litora
+          torquent per conubia nostra, per inceptos himenaeos. Nullam congue elit elit, a sodales nisi suscipit in.Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt arcu massa, dapibus rhoncus odio
+          lobortis vel.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt arcu massa, dapibus
+          rhoncus odio
+          lobortis vel. </p>
+
+      </div>
+      <div class="card__description-price">
+        <h5>Стоимость</h5>
+        <h4 class="price">5.699р</h4>
+        <button class="card__description-button">Забронировать</button>
+      </div>
+    </div>
+
+    <div class="appartaments__card">
+      <img src="./image/background.jpg" alt="" class="card__image">
+
+      <div class="card__description">
+        <h3>Класс</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt arcu massa, dapibus rhoncus odio
+          lobortis vel. Nullam dictum eget diam ut iaculis. Fusce a dui velit. Class aptent taciti sociosqu ad litora
+          torquent per conubia nostra, per inceptos himenaeos. Nullam congue elit elit, a sodales nisi suscipit in.Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt arcu massa, dapibus rhoncus odio
+          lobortis vel.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt arcu massa, dapibus
+          rhoncus odio
+          lobortis vel. </p>
+
+      </div>
+      <div class="card__description-price">
+        <h5>Стоимость</h5>
+        <h4 class="price">5.699р</h4>
+        <button class="card__description-button">Забронировать</button>
+      </div>
+    </div>
+
+    <div class="appartaments__card">
+      <img src="./image/background.jpg" alt="" class="card__image">
+
+      <div class="card__description">
+        <h3>Класс</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt arcu massa, dapibus rhoncus odio
+          lobortis vel. Nullam dictum eget diam ut iaculis. Fusce a dui velit. Class aptent taciti sociosqu ad litora
+          torquent per conubia nostra, per inceptos himenaeos. Nullam congue elit elit, a sodales nisi suscipit in.Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt arcu massa, dapibus rhoncus odio
+          lobortis vel.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt arcu massa, dapibus
+          rhoncus odio
+          lobortis vel. </p>
+
+      </div>
+      <div class="card__description-price">
+        <h5>Стоимость</h5>
+        <h4 class="price">5.699р</h4>
+        <button class="card__description-button">Забронировать</button>
+      </div>
+    </div>
+
+    <div class="appartaments__card">
+      <img src="./image/background.jpg" alt="" class="card__image">
+
+      <div class="card__description">
+        <h3>Класс</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt arcu massa, dapibus rhoncus odio
+          lobortis vel. Nullam dictum eget diam ut iaculis. Fusce a dui velit. Class aptent taciti sociosqu ad litora
+          torquent per conubia nostra, per inceptos himenaeos. Nullam congue elit elit, a sodales nisi suscipit in.Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt arcu massa, dapibus rhoncus odio
+          lobortis vel.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt arcu massa, dapibus
+          rhoncus odio
+          lobortis vel. </p>
+
+      </div>
+      <div class="card__description-price">
+        <h5>Стоимость</h5>
+        <h4 class="price">5.699р</h4>
+        <button class="card__description-button">Забронировать</button>
+      </div>
+    </div>
+
+    <div class="appartaments__card">
+      <img src="./image/background.jpg" alt="" class="card__image">
+
+      <div class="card__description">
+        <h3>Класс</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt arcu massa, dapibus rhoncus odio
+          lobortis vel. Nullam dictum eget diam ut iaculis. Fusce a dui velit. Class aptent taciti sociosqu ad litora
+          torquent per conubia nostra, per inceptos himenaeos. Nullam congue elit elit, a sodales nisi suscipit in.Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt arcu massa, dapibus rhoncus odio
+          lobortis vel.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt arcu massa, dapibus
+          rhoncus odio
+          lobortis vel. </p>
+
+      </div>
+      <div class="card__description-price">
+        <h5>Стоимость</h5>
+        <h4 class="price">5.699р</h4>
+        <button class="card__description-button">Забронировать</button>
+      </div>
+    </div>
+
+    <div class="appartaments__card">
+      <img src="./image/background.jpg" alt="" class="card__image">
+
+      <div class="card__description">
+        <h3>Класс</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt arcu massa, dapibus rhoncus odio
+          lobortis vel. Nullam dictum eget diam ut iaculis. Fusce a dui velit. Class aptent taciti sociosqu ad litora
+          torquent per conubia nostra, per inceptos himenaeos. Nullam congue elit elit, a sodales nisi suscipit in.Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt arcu massa, dapibus rhoncus odio
+          lobortis vel.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt arcu massa, dapibus
+          rhoncus odio
+          lobortis vel. </p>
+
+      </div>
+      <div class="card__description-price">
+        <h5>Стоимость</h5>
+        <h4 class="price">5.699р</h4>
+        <button class="card__description-button">Забронировать</button>
+      </div>
+    </div>
+
+
+
+  </section>
+  <div class="Delimiter">
+    <h2>Оплата</h2>
+  </div>
+
+  <section class="payment">
+    <a id="2"></a>
+    <div class="payment__block">
+      <h3>Способ оплаты</h3>
+      <div class="payment__block-fill">
+        <h4>Оплата при заселении</h4>
+        <p>Выбирая этот способ оплаты, вы не вносите предоплату за бронь. Получите подтверждение бронирования на
+          электронную почту, которую указали при бронировании, и предъявите его при заселении.</p>
+        <button class="card__description-button add_class">Забронировать</button>
+      </div>
+
+  </section>
+
+  <div class="Delimiter">
+    <h2>О нас</h2>
+  </div>
+
+  <section class="about">
+    <a id="3"></a>
+    <div class="about__block">
+      <h4>Lorem Ipsum</h4>
+      <h1>20+ специалистов</h1>
+
+      <img src="./image/smile1.png" alt="" class="smile">
+    </div>
+
+    <div class="about__block">
+      <h4>Lorem Ipsum</h4>
+      <h1>5+ лет опыта</h1>
+      <img src="./image/smile2.png" alt="" class="smile">
+    </div>
+
+    <div class="about__block">
+      <h4>Lorem Ipsum</h4>
+      <h1>8+ аппартаметов</h1>
+
+      <img src="./image/smile3.png" alt="" class="smile">
+    </div>
+  </section>
+
+  <section class="contact-with-us">
+    <div class="contact-with-us__mailer">
+      <div class="contact__mailer">
+        <div class="address__block">
+          <img src="./image/marker2.png" alt="">
+          <h5>Адрес</h5>
+          <span>г. Чусовой, ул. Нагорная, д.66</span>
+        </div>
+        <div class="address__block">
+          <img src="./image/phone.png" alt="">
+          <h5>Телефон</h5>
+          <span>8-800-555-35-35</span>
+        </div>
+        <div class="address__block">
+          <img src="./image/email.png" alt="">
+          <h5>Email</h5>
+          <span>qwertyz100@mail.ru</span>
+        </div>
+      </div>
+      <form action="./sendmail.php" method="POST" id="form" class="contacts__block">
+        <div class="contacts__block-text">
+          <h3>Отправьте нам сообщение</h3>
+          <p>Если у вас есть какие-то вопросы или предложения по сотрудничеству - заполните форму ниже</p>
+        </div>
+        <div class="contacts__input">
+          <input type="text" placeholder="Ваше имя*" name="name" class="inputs _req">
+          <input type="text" placeholder="Ваш email*" name="email " class="inputs _req _email">
+          <input type="text" placeholder="Введите телефон*" name="tel" class="inputs _req">
+          <textarea name="msg" type="text" placeholder="Сообщение" class="input-message _req"></textarea>
+          <button type="submit" class="contact__button">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <a id="4"></a>
+  </footer>
+
+  <script src="./js/mail.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

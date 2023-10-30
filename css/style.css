@@ -1,0 +1,503 @@
+/* Ресет */
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+
+    font-weight: inherit;
+}
+
+ul,
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button,
+input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
+body {
+    font-family: system-ui,
+
+        -apple-system,
+
+        "Segoe UI",
+
+        Roboto,
+
+        "Helvetica Neue", Arial,
+
+        "Noto Sans",
+        "Liberation Sans",
+
+        sans-serif;
+
+}
+/* Scroll-bar */
+
+body::-webkit-scrollbar {
+    width: 12px;               /* ширина всей полосы прокрутки */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #fff;        /* цвет зоны отслеживания */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(32, 107, 204);    /* цвет бегунка */
+    border-radius: 20px;       /* округлось бегунка */
+    border: 3px solid #fff;  /* отступ вокруг бегунка */
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Меню */
+.menu {
+    height: 920px;
+    width: 106px;
+    background-color: rgba(0, 0, 0, 0.90);
+    color: #fff;
+    position: fixed;
+    display: flex;
+    transition: 0.8s ease;
+    border-right: 3px solid rgb(32, 107, 204);
+    z-index: 2;
+}
+
+.menu-rotate {
+    margin: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transform: rotate(-90deg);
+}
+
+.menu-rotate p {
+    padding-left: 10px;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+/* Карусель из фото */
+.wrapper-for-carousel {
+    margin: 0px auto;
+    padding-bottom: 1px;
+    padding-left: 106px;
+    width: 1475px;
+}
+
+.carousel__image {
+    width: 1475px;
+    filter: brightness(60%);
+}
+
+.carousel-control-prev-icon {
+    height: 64px;
+    width: 64px;
+    background: url(./../image/prev-arrow.svg);
+}
+
+.carousel-control-next-icon {
+    height: 64px;
+    width: 64px;
+    background: url(./../image/next-arrow.svg);
+}
+
+.Delimiter {
+    margin-left: 108px;
+    height: 100px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.90);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hover меню */
+.menu-open {
+    height: 920px;
+    width: 322px;
+    background-color: rgba(0, 0, 0, 0.90);
+    color: #fff;
+    position: fixed;
+    padding-left: 50px;
+    gap: 50px;
+    transition: 0.5s ease;
+    opacity: 0;
+    left: -322px;
+    z-index: 2;
+
+}
+
+.map-icon {
+    margin: 0;
+}
+
+.logo {
+    cursor: pointer;
+    text-align: center;
+    padding: 50px 25%;
+}
+
+.menu-open :nth-child(-n + 7) {
+    font-size: 24px;
+}
+
+.mark {
+    display: flex;
+    align-items: center;
+    background: none;
+}
+
+.menu-open li {
+    cursor: pointer;
+    padding-bottom: 40px;
+}
+
+li>a:hover {
+    transition: 0.3s ease;
+    border-bottom: 1px solid rgb(32, 107, 204);
+}
+
+/* Аппартаменты */
+
+.appartaments {
+    margin-top: 50px;
+    margin-left: 108px;
+
+}
+
+.appartaments__card {
+    display: flex;
+    margin: auto;
+    width: 1500px;
+    height: 250px;
+    margin-bottom: 50px;
+    background: #fff;
+    -webkit-box-shadow: 11px 9px 15px 5px rgba(32, 107, 204, 0.2);
+    -moz-box-shadow: 11px 9px 15px 5px rgba(32, 107, 204, 0.2);
+    box-shadow: 11px 9px 15px 5px rgba(32, 107, 204, 0.2);
+}
+
+.appartaments__card:hover {
+    scale: 1.025;
+    transition: 0.4s ease;
+}
+
+.card__description {
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.card__image {
+    margin: auto 0px;
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 200px;
+    width: 200px;
+}
+
+.card__description-price {
+    height: 100%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(32, 107, 204, 0.3);
+}
+
+.price {
+    margin-bottom: 25px;
+}
+
+.card__description-button {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 25px;
+    height: 50px;
+    width: 150px;
+    background-color: rgb(32, 107, 204);
+}
+
+.card__description-button:hover {
+    filter: brightness(90%);
+}
+
+/* Оплата */
+
+.payment {
+    margin-top: 50px;
+    margin-left: 108px;
+    margin-bottom: 80px;
+}
+
+.payment__block {
+    padding: 20px;
+    text-align: center;
+    border-radius: 50px;
+    margin: auto;
+    color: #fff;
+    width: 920px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.9);
+}
+.payment__block-fill{
+    padding-top: 20px;
+    text-align: start;
+}
+
+/* О нас */
+
+.about{
+    margin-top: 50px;
+    margin-left: 108px;
+    height: 180px;
+    display: flex;
+    justify-content: space-around;
+}
+.about__block{
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 40px;
+    height: 120px;
+    width: 400px;
+    background-color: #FFF;
+    -webkit-box-shadow: 11px 9px 15px 5px rgba(32, 107, 204, 0.4);
+    -moz-box-shadow: 11px 9px 15px 5px rgba(32, 107, 204, 0.4);
+    box-shadow: 11px 9px 15px 5px rgba(32, 107, 204, 0.4);
+}
+.about__block>h4{
+    padding-top: 10px;
+    color: rgba(0, 0, 0, 0.9);
+}
+.about__block>h1{
+    color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+.smile{
+    position: absolute;
+    height: 64px;
+    width: 64px;
+    bottom: -20px;
+    right: -20px;
+}
+
+/* Связаться с нами */
+
+.contact-with-us{
+    margin-left: 108px;
+    margin-bottom: 50px;
+}
+.contact-with-us__mailer{
+    display: flex;
+    justify-content: space-around;
+    color: #FFF;
+    margin: auto;
+    border-radius: 15px;
+    width: 1100px;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.contact__mailer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.address__block{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.address__block>img{
+    width: 32px;
+    height: 32px;
+}
+.contacts__block{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    margin: 15px 0px;
+    justify-content: space-evenly;
+    
+}
+.contacts__block::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8) url('../image/preloader.gif') center / 50px no-repeat;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+}
+.contacts__block._sending::after{
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.contacts__input{
+    display: grid;
+    gap: 30px;
+}
+.contacts__input>input{
+    border-radius: 25px;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(32, 107, 204, 0.4);
+    padding-left: 20px;
+}
+
+.contact__button{
+    width: 40%;
+    height: 50px;
+    border-radius: 25px;
+    color: #FFF;
+    background-color: rgb(32, 107, 204);
+}
+.input-message{
+    height: 80px;
+    border-radius: 25px;
+    width: 100%;
+    padding-top: 10px;
+    background-color: rgba(32, 107, 204, 0.4);
+    padding-left: 20px;
+    resize: none;
+}
+
+
+/* Подвал */
+.footer{
+    border-radius: 30px 30px 0px 0px;
+    margin-left: 108px;
+    height: 300px;
+    background-color: rgb(32, 107, 204);
+}
+
+/* Карта map.html */
+.map {
+    padding-top: 15px;
+    margin-left: 6%;
+    margin-right: 0.5%;
+}
+
+.map__points {
+    margin-left: 3%;
+    margin-bottom: 20px;
+}
+
+/* Проверка отправки */
+.inputs:focus{
+    box-shadow: 0 0 15px rgb(32, 107, 204);
+}
+
+.inputs._error{
+    box-shadow: 0 0 15px red;
+}
+
+
